@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes ping-pong {
+            form {
+                left: 0;
+            }
+
+            to {
+                left: 500px;
+            }
+
+        }
+
+        .stage {
+            width: 500px;
+            height: 300px;
+            border: 2px solid steelblue;
+            background-color: rgb(71, 67, 60);
+        }
+
+        .boll {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+            animation: ping-pong 2s ease-in-out 1s 3 alternate infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Explore animation</h2>
+    <div class="stage">
+        <div class="boll">
+
+        </div>
+    </div>
+</body>
+
+</html>
